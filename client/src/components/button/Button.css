@@ -1,0 +1,25 @@
+/* CustomButton.css */
+
+.btn-component{
+    display: inline-block;
+    line-height: 36px;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px 20px;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.default-btn{
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+  height: 100%;
+}

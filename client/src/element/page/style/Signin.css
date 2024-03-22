@@ -1,0 +1,152 @@
+
+.container{
+    width: 24vw;
+    height: 55vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:'login';
+  
+}
+.design{
+    grid-area: design;
+    display: block;
+}
+
+
+.login{
+    grid-area: login;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: white;
+}
+.login h3.title{
+    margin: 15px 0;
+}
+
+.text-input{
+    background: #e6e6e6;
+    height: 40px;
+    display: flex;
+    width: 68%;
+    align-items: center;
+    border-radius: 10px;
+    margin: 5px 0;;
+}
+
+
+.text-input .input-component input{
+    padding: 11px 22px;
+    color: black;
+}
+
+.text-input .input-component input::placeholder{
+    color: #9a9a9a;
+}
+/* .text-input .input-component > .label{
+    text-align: left;
+    right: -10px;
+
+} */
+.login-btn{
+    width: 68%;
+    background: linear-gradient(to right, #ff966d, #fa538d, #89379c);
+    border: none;
+    border-radius: 20px ;
+    cursor: pointer;
+    margin-top: 25px;
+    padding: 3px 0;
+}
+.login-btn button{
+    width: 100%;
+}
+
+.login-btn button{
+    color: white;
+}
+
+.create{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20pc;
+}
+.create i{
+    color: #9a9a9a;
+    margin-left: 10px;
+}
+a{
+    font-size: 12px;
+    color: #9a9a9a;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+}
+
+a.forgot{
+    position: relative;
+    top: 25px;
+}
+
+
+.user-feedback{
+    padding: 10px;
+    color: white;
+}
+
+
+/*registrazione disposizione contenitore*/
+.register-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 'design register';
+    height: 100%;
+}
+
+
+.register-design{
+    grid-area: design;
+    display: block;
+    background-image: url('../../../assets/registrazione.png');
+}
+
+.register{
+    grid-area: register;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: white;
+}
+
+.register .title{
+    position: relative;
+    bottom: 20%;
+}
+
+span.eye-icon {
+    position: relative;
+    left: 22%;
+}
+.text-input.error {
+    border: 1px solid red;
+}
+
+.register .message-component {
+    width: 97%;
+    position: relative;
+    bottom: 8rem;
+}
+
+.create{
+    position: relative;
+    top: 60px;
+    font-size: 11px;
+}
+.create a {
+    font-size: 11px;
+    text-decoration: underline;
+  }

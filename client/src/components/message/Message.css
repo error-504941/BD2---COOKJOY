@@ -1,0 +1,12 @@
+
+.message-component.message-error{
+    background-color: #eb2525;
+}
+
+.message-component.message-success{
+    background-color: green;
+}
+
+.message-component.message-warning{
+    background-color: yellow;
+}

@@ -1,0 +1,38 @@
+
+.input-component input{
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+
+.input-component{
+    position: relative;
+    background: #e6e6e6;
+    height: 40px;
+    display: flex;
+    width: 68%;
+    align-items: center;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+.inner-input {
+    color: black;
+    padding: 7px 7px;
+}
+
+.label {
+    font-size: 14px;
+    color: #9a9a9a;
+    position: relative;
+    bottom: 17px;
+}
+.label{
+    display: none;
+}

@@ -1,0 +1,507 @@
+/* CookingSite.css */
+.cooking-navbar{
+    background-image: url('../assets/backgroundtwo.jpg'); /* Sostituisci con il percorso dell'immagine */
+    background-size: cover; /* Copre l'intero sfondo 1200*438*/
+    background-position: center; /* Posiziona l'immagine al centro */
+    background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
+    height: 360px; /* Adjust the height as needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header-banner {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    padding: 16px;
+    cursor: pointer;
+    margin: 0 20px;
+    -webkit-user-select: none;
+    user-select: none;
+    text-decoration: none;
+}
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-component.login-button {
+  background: white;
+}
+
+.login-button button{
+  padding: 0px 55px;
+}
+
+
+/*provvisorio*/
+.intestazione{
+  position: absolute;
+  bottom: 90px;
+  color: white;
+  left: 263px;
+
+}
+
+.intestazione h3{
+  margin:  54px  0;
+}
+
+/* filtro*/
+
+.search-component.search-navbar{
+  display: flex;
+}
+
+.search-component.search-navbar 
+.input-component{
+    border-radius: 10px 0 0 10px;
+    border: 2px solid white;
+    border-right: none;
+    position: relative;
+    width: 100%;
+    left: 20px;
+}
+
+.category-filter {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  border: 1px solid white;
+  width: 90px;
+  height: 41px;
+  position: relative;
+  top: 5px;
+  left: 20px;
+}
+
+.category-filter select{
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+  color: white;
+}
+
+.select-component option{
+  color: black;
+}
+
+.btn-component.btn-search {
+  padding: 10px;
+  margin-top: 4px;
+  line-height: inherit;
+  border-radius: 0 5px 5px 0;
+  border: 2px solid white;
+  background: white;
+
+}
+
+
+.home-container {
+  margin: 7rem 10rem;
+  text-align: center;
+}
+
+.home-container h1{
+  margin: 4pc;
+}
+.image-category-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media(max-width:768px){
+  .home-container {
+      margin: 2rem 3rem;
+      text-align: center;
+}
+
+  .image-category-wrapper{
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width:480px){
+  .image-category-wrapper{
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+
+/*SEZIONE AGGIUNGI UNA RICETTA*/
+.add-recipe h2{
+  text-align: center;
+  margin-top: 17px;
+}
+
+.form-add-recipe {
+  display: flex;
+  height: 100vh; /* Adjust as needed */
+}
+
+.left-recipe-side,
+.right-recipe-side {
+  flex: 1;
+  padding: 20px;
+}
+
+.first-section {
+  padding: 10px;
+}
+
+.first-section .input-component{
+  width: 100%;
+}
+
+
+
+.recipe-select-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.second-section{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  margin: 11px auto;
+  padding: 10px;
+  border: 1px solid #ccc
+}
+
+.counter-section{
+  margin: 6px;
+}
+
+.section-title {
+  font-size: 11px;
+  position: relative;
+  left: 19px;
+}
+
+
+.my-recipe h2{
+  text-align: center;
+}
+
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-component {
+  display: flex;
+}
+
+.recipe-details {
+  width: 179px;
+  margin-top: 17px;
+}
+
+.details {
+  display: flex;
+  gap: 10px;
+  padding: 4px;
+  border: 1px solid gray;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 15px;
+}
+
+.recipe-card-category {
+  font-size: 13px;
+  color: gray;
+}
+
+.recipe-not-found {
+  text-align: center;
+}
+
+
+.recipe-card .card-image-container{
+  height: auto;
+  overflow: hidden;
+  width: 300px;
+}
+
+.recipe-card .card-image{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* MAIN CONTENT**/
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main-content .card-component{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content > .card-component > .card-image{
+  width: auto;
+}
+.main-content > .card-component > .card-content {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  margin: 10px;
+}
+
+
+.go-back-arrow{
+  position: relative;
+  font-size: 20px;
+}
+
+
+/* Contenuto**/
+.recipe-container .recipe-title{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hr-img-container{
+  display: flex;
+  margin: 30px 0;
+  justify-content: center;
+}
+.hr-img-container img{
+  width: 330px;
+}
+
+.recipe-header {
+  display: flex;
+  margin: 15px 10px;
+  justify-content: space-between;
+}
+
+.summary-category {
+  font-weight: bold;
+}
+
+
+.header-ingredient-list span {
+  margin-right: 10px; /* Adjust the margin value to control the space between spans */
+  font-size: 14px;
+}
+
+/* To remove the right margin from the last span */
+.header-ingredient-list span:last-child {
+  margin-right: 0;
+}
+
+
+.recipe-header-details {
+  display: flex;
+}
+.recipe-instruction .title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+h4.title{
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 25px;
+}
+.instruction {
+  display: flex;
+  gap: 10px;
+  margin: 10px 30px;
+}
+
+.instruction-step {
+  background: orange;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  min-width: 25px;
+}
+
+/* Lista d'ingredienti*/
+.ingredient .input-component{
+  width: 100%;
+}
+
+
+.btn-component.add-items {
+  background-color: orange;
+  width: 11%;
+}
+.quantity-unit{
+  display: flex;
+  gap: 10px
+}
+.list-ingredient{
+  width: 442px;
+  height:130px;
+  overflow: auto;
+  border: 1px solid #ccc; 
+}
+
+.ingredient-item {
+  display: flex;
+  gap: 3px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.trash-ingredient{
+  float: right;
+  margin-left: 40px;
+}
+
+.btn-component.add-recipe-btn {
+  background: red;
+  float: right;
+  width: 23%;
+}
+.add-recipe-btn .default-btn{
+  color: white;
+}
+
+.recipe-card .recipe-footer{
+  display: flex;
+  justify-content: space-around;
+  gap: 24px;
+  flex-direction: row;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 4px 9px;
+}
+
+  
+.user-box {
+  position: fixed;
+  right: 1%;
+}
+
+.user-box .details-info {
+  display: flex;
+  gap: 15px;
+  border: 1px solid gainsboro;
+  padding: 14px 25px;
+  border-radius: 18px;
+  background-color: white;
+  margin: 10px;
+  margin-right: 25px;
+}
+
+.details-info span{
+  color: black;
+  font-size: 14px;
+}
+
+.userbox-action {
+  display: flex;
+  gap: 25px;
+}
+.icon-user{
+  font-size: 17px;
+}
+
+/**filtro ingredienti */
+.ingredient-filter {
+  border: 1px solid #fff;
+  width: 70%;
+  height: 100px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+}
+
+.ingredient-filter-wrapper{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.ingredient-filter-box{
+  display: flex;
+  align-items: center;
+}
+
+.filter-ingredient-btn{
+  border: 2px solid orange;
+  border-radius: 30px;
+  color: #ffffff;
+  background-color: orange;
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 0;
+}
+
+ul.list-ingredient-recipe{
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.name-ingredient{
+  border: 1px solid orange;
+  padding: 3px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: orange;
+  color: white;
+  font-size: medium;
+}
+
+.recipe-summary {
+  font-size: 13px;
+}
+
+ul.recipe-summary-list{
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.instruction-description {
+  text-align: justify;
+}
